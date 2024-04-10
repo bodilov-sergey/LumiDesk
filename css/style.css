@@ -1,0 +1,22 @@
+@import url(fonts.css);
+@import url(var.css);
+@import url(common.css);
+@import url(controls.css);
+
+@import url(header.css);
+
+@import url(main.css);
+@import url(benefits.css);
+@import url(analytics.css);
+@import url(catalog.css);
+@import url(help.css);
+@import url(tips.css);
+@import url(form.css);
+@import url(contacts.css);
+@import url(vacancies.css);
+@import url(partners.css);
+
+@import url(footer.css);
+
+@import url(doc.css);
+@import url(thank.css);

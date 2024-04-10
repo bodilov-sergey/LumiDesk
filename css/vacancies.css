@@ -1,0 +1,58 @@
+.vacancies {
+  background: url(../img/vacancies/vacancies-bg.jpg) 50% 50% / cover no-repeat;
+  padding-top: 50px;
+}
+.vacancies__wrapper {
+  background: var(--transparent-black);
+  padding: 50px 0 0;
+  position: relative;
+}
+.vacancies__top {
+  /padding: 20px;
+}
+.vacancies__title {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.vacancies__bottom {
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+  margin-left: calc(0px - var(--gap));
+}
+.vacancies__item {
+  margin: 0 0 40px var(--gap);
+}
+.vacancies__item-content {
+  background: var(--secondary);
+  background: linear-gradient(45deg, var(--secondary) 95%, transparent 95%);
+  padding: 20px 40px 20px 20px;
+  margin-bottom: 20px;
+}
+.vacancies__item-title {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .vacancies__wrapper {
+    background: linear-gradient(90deg, var(--transparent-black) 60%, transparent 60%);
+  }
+  .vacancies__wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    width: 100vw;
+    background: var(--transparent-black);
+  }
+  .vacancies__top {
+    width: 50%;
+  }
+  .vacancies__bottom {
+    flex-direction: row;
+  }
+}

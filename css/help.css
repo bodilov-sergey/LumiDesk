@@ -1,0 +1,43 @@
+.help {
+  background: url(../img/help/help-bg.jpg) 50% 70% / cover no-repeat;
+  padding: 100px 0 130px;
+}
+.help__header {
+  position: relative;
+  z-index: 2;
+  background: var(--white);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--dark);
+}
+.help__title {
+  max-width: 600px;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: inherit;
+}
+.help__description {
+  max-width: 600px;
+  color: var(--dark);
+  margin-bottom: 20px;
+  color: inherit;
+}
+.help__link {
+  color: var(--white);
+}
+.help__footer {
+  padding: 20px;
+  color: var(--white);
+  background: linear-gradient(90deg, var(--secondary) 0%, rgba(255, 255, 255, 0) 100%);
+  position: relative;
+}
+.help__footer::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(100deg, var(--secondary) 0%, rgba(255, 255, 255, 0) 100%);
+}

@@ -1,0 +1,27 @@
+:root {
+  --white: #fff;
+  --light: #f8f9f4;
+  --transparent-light: #ffffff3d;
+  --black: #000;
+  --transparent-black: #001b24ec;
+  --dark: #002b33;
+
+  --primary: #01aece;
+  --primary-dark: #007b91;
+  --primary-light: #aebebe;
+  --primary-transparent: #01afce80;
+
+  --secondary: #ff6000;
+  --secondary-dark: #c54c00;
+  --secondary-light: #f5dfd4;
+
+  --body-bg: var(--primary-light);
+  --body-color: var(--white);
+
+  --title-color: var(--white);
+  --title-size: 5rem;
+  --title-weight: 600;
+  --title-align: start;
+
+  --gap: 20px;
+}

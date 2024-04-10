@@ -1,0 +1,29 @@
+.analytics {
+  background: url("../img/analytics/analytics-bg.jpg") 50% 70% / cover no-repeat;
+}
+.analytics__wrapper {
+  background: var(--transparent-black);
+  max-width: 500px;
+  padding: 200px 20px 50px;
+  position: relative;
+}
+.analytics__wrapper::before {
+  content: "";
+  background: var(--transparent-black);
+  position: absolute;
+  right: 100%;
+  left: -100vw;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+.analytics__title {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+.analytics__items {
+  margin-bottom: 30px;
+}
+.analytics__item {
+  margin-bottom: 10px;
+}

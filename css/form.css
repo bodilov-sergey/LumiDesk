@@ -1,0 +1,60 @@
+.form {
+  padding: 80px 0;
+}
+.form__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 20px 20px 0;
+}
+.form__title {
+  color: var(--dark);
+  font-size: 4rem;
+  margin-bottom: var(--gap);
+}
+.form__content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: calc(0px - var(--gap));
+}
+.form__right {
+  width: calc(100% - var(--gap));
+  margin-left: var(--gap);
+}
+.form__user-info {
+  width: 100%;
+  margin-bottom: var(--gap);
+}
+.form__user-message {
+  width: calc(100% - var(--gap));
+  margin: 0 0 var(--gap) var(--gap);
+}
+.form__agreement-label {
+  width: calc(100% - var(--gap));
+  margin: 0 0 var(--gap) var(--gap);
+  color: var(--dark);
+}
+.form__agreement {
+  margin-right: 10px;
+}
+.form__link {
+  color: var(--secondary);
+  transition: color 0.2s ease;
+}
+.form__link:hover {
+  color: var(--secondary-dark);
+}
+.form__btn {
+  margin: 0 0 var(--gap) var(--gap);
+}
+
+@media (min-width: 576px) {
+  .form__right {
+    width: calc(50% - var(--gap));
+  }
+  .form__user-message {
+    width: calc(50% - var(--gap));
+  }
+}

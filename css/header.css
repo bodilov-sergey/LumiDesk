@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--transparent-black);
+  box-shadow: 0 0 20px 0 var(--transparent-light);
+  z-index: 10;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  position: relative;
+}
+.header__brand {
+  flex-grow: 1;
+}
+.header__logo {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 18px;
+  background: var(--secondary);
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+  height: 50px;
+}
+.header__logo:hover {
+  color: var(--dark);
+}
+.header__btn {
+  position: relative;
+  z-index: 2;
+  display: block;
+  height: 45px;
+  width: 45px;
+  padding: 8px 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__btn-item {
+  width: 100%;
+  display: block;
+  height: 4px;
+  background: var(--white);
+  transition: 0.3s ease;
+  transition-property: width, transform;
+}
+.header__menu {
+  display: block;
+  position: absolute;
+  right: -450px;
+  background: var(--dark);
+  width: 306px;
+  top: 0;
+  padding-top: 50px;
+  height: 100vh;
+  transition: right 0.2s ease;
+}
+.header__menu::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 130px;
+  background: var(--dark);
+}
+.header__list {
+  display: flex;
+  flex-direction: column;
+}
+.header__link {
+  display: inline-block;
+  color: var(--secondary);
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  margin-top: 10px;
+}
+.header__link:hover {
+  color: var(--white);
+}
+
+.header__btn--open .header__btn-item:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 9px);
+}
+.header__btn--open .header__btn-item:nth-child(2) {
+  width: 0;
+}
+.header__btn--open .header__btn-item:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -9px);
+}
+
+.header__menu--open {
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .header__menu {
+    position: static;
+    background: transparent;
+    width: auto;
+    padding-top: 0;
+    height: auto;
+  }
+  .header__menu::before {
+    display: none;
+  }
+  .header__link {
+    margin: 0;
+  }
+  .header__list {
+    flex-direction: row;
+  }
+  .header__btn {
+    display: none;
+  }
+}
